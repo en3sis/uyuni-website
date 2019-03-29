@@ -12,6 +12,7 @@
   --bc-primary: #00C081;
   --bc-primary-light: #26C994;
   --bc-secondary: #142529;
+  --bc-links: #008ACF;
 
   /* Helpers */
   --bc-gray-light: #FDFDFD;
@@ -25,11 +26,25 @@ body {
 }
 
 a, a:visited, a:active, a:focus {
-  color: var(--bc-primary)
+  color: var(--bc-links)
 }
 
 p {
   font-weight: 400;
+}
+
+code {
+  font-size: 87.5%;
+  color: #e83e8c;
+  width: 100%;
+  background: #F5F5F5;
+  padding: 10px;
+  display: block;
+  margin: 15px 0;
+}
+
+.content-padding{
+  padding: 80px 40px;
 }
 
 .btn-primary {
@@ -137,10 +152,6 @@ header .cta-section {
   padding: 0;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.05);
   border-bottom: 5px solid var(--bc-primary);
-}
-
-.content-padding{
-  padding: 80px 20px;
 }
 
 .home-illustration {
@@ -322,6 +333,66 @@ footer a {
   margin-right: 10px;
 }
 
+
+/* ==========================================================================
+  PAGES
+  ========================================================================== */
+  /* Global subpage
+  ========================================================================== */
+header.subpage-header {
+  height: 500px;
+  color: #fff;
+}
+
+header .subpage-description {
+  margin-top: 100px;
+}
+
+.subpage-header h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 48px;
+}
+
+.subpage-description p{
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.subpage-title-back {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subpage-title-back a{
+  color: #fff;
+}
+
+.subpage-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.subpage-content ul {
+  list-style: none;
+}
+
+.subpage-content ul li::before{
+  content: "\2022";
+  color: #F2F2F2;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.subpage-content-push-right {
+  margin: 0 0 16px;
+  padding-left: 30px;
+}
 /* ==========================================================================
   Devices
   ========================================================================== */
@@ -341,18 +412,12 @@ footer a {
   /* .wrapper .container > .row {
     padding: var(--margin-m);
   } */
- }
 
+  .subpage-title-back {
+    flex-direction: column;
+  }
 
-/* ==========================================================================
-  PAGES
-  ========================================================================== */
-  /* Global subpage
-  ========================================================================== */
-header.subpage-header {
-  height: 500px;
-}
-
-header.subpage-header h1 {
-  color: #fff
+  .subpage-title-back a{
+    margin-top: 20px;
+  }
 }
