@@ -50,6 +50,7 @@ code {
 .btn-primary {
   background: var(--bc-primary);
   border: none;
+  transition: all 0.5 ease-in-out;
 }
 
 .btn-primary:hover,
@@ -275,13 +276,6 @@ header .cta-section {
   justify-content: center;
 }
 
-/* .news-box-cta a:before {
-  content: '+';
-  width: 15px;
-  display: flex;
-  height: 20px;
-} */
-
 .news-box-cta a:before {
   content: ' »';
   width: 10px;
@@ -411,10 +405,6 @@ header .subpage-description {
   .cta-section button{
     margin-top: 10px;
   }
-
-  /* .wrapper .container > .row {
-    padding: var(--margin-m);
-  } */
 
   .subpage-title-back {
     flex-direction: column;
