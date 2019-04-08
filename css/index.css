@@ -41,6 +41,7 @@ code {
   padding: 10px;
   display: block;
   margin: 15px 0;
+  border-bottom: 2px solid #c5c5c5
 }
 
 .content-padding{
